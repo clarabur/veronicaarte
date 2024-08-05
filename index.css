@@ -101,3 +101,18 @@ main {
     cursor: pointer;
 }
 
+footer p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+footer i {
+    font-size: 30px; /* Ajusta el tamaño del ícono */
+    color: #000; /* Cambia el color del ícono */
+}
+
+footer span {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    margin-left: 10px; /* Espacio entre el ícono y el texto de contacto */
+}
