@@ -101,18 +101,38 @@ main {
     cursor: pointer;
 }
 
-footer p {
+footer {
+    background-color: #f5f5f5; /* Color de fondo ligeramente más oscuro que el resto de la página */
+    padding: 1rem;
+    text-align: center;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc; /* Raya fina */
+    margin: 1rem 0; /* Espaciado arriba y abajo */
+}
+
+.contact-info {
+    font-size: 1rem;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre el ícono y el texto */
+    justify-content: center;
+    gap: 8px; /* Espacio entre el ícono y el texto */
 }
 
-footer i {
-    font-size: 30px; /* Ajusta el tamaño del ícono */
-    color: #000; /* Cambia el color del ícono */
+.contact-info i {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #333; /* Color del ícono */
 }
 
-footer span {
-    font-size: 18px; /* Ajusta el tamaño del texto */
-    margin-left: 10px; /* Espacio entre el ícono y el texto de contacto */
+.contact-info p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
 }
+
