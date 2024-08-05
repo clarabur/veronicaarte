@@ -1,0 +1,103 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Gris clarito */
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: lightslategray; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de la fuente del encabezado */
+    margin: 0; /* Elimina el margen */
+}
+
+main {
+    padding: 2rem;
+}
+
+.artworks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.artwork {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la obra para indicar que es clickeable */
+    transition: transform 0.3s ease; /* Suaviza la transición del agrandamiento */
+}
+
+.artwork img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 400px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px; /* Asegura que el borde redondeado se aplique a la imagen */
+}
+
+.artwork-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegura que el overlay esté encima del contenido */
+    overflow: auto; /* Permite el desplazamiento si el contenido es más grande que la ventana */
+}
+
+.overlay-content {
+    background: #fff; /* Fondo blanco para el contenido del modal */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
+    position: relative; /* Para posicionar el botón de cerrar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+}
+
+.overlay-content img {
+    max-width: 100%;
+    max-height: 80vh; /* Ajusta la altura máxima de la imagen */
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#overlay-title {
+    margin: 1rem 0;
+}
+
+#overlay-description,
+#overlay-price {
+    margin: 0.5rem 0;
+}
+
+#overlay-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
